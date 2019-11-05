@@ -25,7 +25,7 @@ public class Printer {
         if (totalPagesRequired <= this.paper && pages <= this.tonerVolume) {
             this.paper -= totalPagesRequired;
             //    Modify the printer so that it reduces the toner by 1 for each page printed.
-            this.tonerVolume -= pages;
+            this.tonerVolume -= totalPagesRequired;
         }
     }
 
